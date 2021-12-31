@@ -35,15 +35,10 @@
         {% endfor %}
       </p>
       <p class="card-text">
-        {%- if post.description -%}
-        {{ post.description }}
-        {%- else -%}
-        {{ "" }}
-        {%- endif -%}
       </p>
     </div>
     <div class="card-footer {{ text_style }}">
-      {{ post.date | date_to_long_string }}
+      {{ post.start }} - {{ post.end }}
     </div>
   </a>
 </div>
