@@ -23,11 +23,14 @@
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-text">
+        {{ post.issuer }}
+      </p>
+      <p class="card-text">
         {{ post.content }}
       </p>
     </div>
     <div class="card-footer {{ text_style }}">
-      {{ post.date }}
+      {{ post.date | date: "%B %Y" }}
     </div>
   </div>
 </div>
