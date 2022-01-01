@@ -1,6 +1,6 @@
 <div class="card-group mt-2">
 
-  {% for post in site.awards %}
+  {% for post in site.awards reversed %}
     {% include awards/post-card.html %}
   {% endfor %}
   
