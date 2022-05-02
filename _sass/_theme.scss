@@ -23,7 +23,7 @@
 }
 
 #lang-toggler:before {
-  @include lang(content, "US", "KR");
+  @include lang(content, "EN", "KR");
 }
 
 .navbar-themed {
