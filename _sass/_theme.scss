@@ -8,8 +8,22 @@
   }
 }
 
+@mixin lang($property, $en-value, $kr-value) {
+  [data-lang="en"] & {
+    #{$property}: $en-value;
+  }
+
+  [data-lang="kr"] & {
+    #{$property}: $kr-value;
+  }
+}
+
 #theme-toggler:before {
   @include themed(content, "🌙", "🌞");
+}
+
+#lang-toggler:before {
+  @include lang(content, "🇺🇸", "🇰🇷");
 }
 
 .navbar-themed {
